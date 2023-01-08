@@ -1,6 +1,6 @@
 # Tech-items-diag
 
-Tech items reparation analysis
+Tech items reparation analysis. Based on Jean Milpied "Reparator.ai" project: https://github.com/JeanMILPIED/reparatorAI
 
 
 ## Tools used
