@@ -36,19 +36,21 @@ Data Types:
 * Deleting 11 rows with too much missing data
 #### Fields cleaning
 * Renamed the unamed fied as "Row_ID"
-* Partner product category = splitted the 2 parts -> New Column "Partner_Category". Lots of missing values / errors in the new column
-* Brands = Missing values replaced by "Unknown" and manual standardisation of known brands (search & replace). I will only use legit famous brands names, because there are too much error remaining in this field. A proper cleaning involve a 
-* Year of manufacture =
+* **Partner product category** = splitted the 2 parts -> New Column "Partner_Category". Lots of missing values / errors in the new column
+* **Brands** = Missing values replaced by "Unknown" and manual standardisation of known brands (search & replace). I will only use legit famous brands names, because there are too much error remaining in this field. A proper cleaning involve a 
+* **Year of manufacture** =
   * Converted as a integer
   * Outliers: Printer created in 1015 by HP ? 🤨 Before 1950 I've only kept watches, lamp, sewing machine. For the other rows (77) I've deleted year and age
-* Product age = Converted as integer
-* repair_barrier_if_end_of_life = Status standardisation
-* group Identifier = 
+* **Product age** = Converted as integer
+* **repair_barrier_if_end_of_life** = Status standardisation
+* **group Identifier** = 
   * 612 Null values all From "Fixit clinic" data provider. After some research it appears Fixit clinic is a Pop-up Activity, It's not a genuine shop: https://fixitclinic.blogspot.com/ 
   * The Id's are either a number or a text. Texts are countries mostly, so I assume this ID is a shop location
-* Event date = 4 Rows deleted with missing values also 15 event_date are in 1999, I've left them in 1999
-* Problem = Problem description. I didn't cleaned this field and will not used it in my analysis. Multiple languages used (EN; FR; NL; DE; IT)
-* Product category_new and brand_ok = Useless fields. I didn't cleaned this field and will not use it in my analysis.
+* **Event date** = 
+  * 4 Rows deleted with missing values
+  * 15 event_date are in 1999 from repair cafe intl. Those dates are wrong as Repair Cafes were created in 2009 by Martine Postma: https://www.repaircafe.org/en/about/
+* **Problem** = Problem description. I didn't cleaned this field and will not used it in my analysis. Multiple languages used (EN; FR; NL; DE; IT)
+* **Product category_new and brand_ok** = Useless fields. I didn't cleaned this field and will not use it in my analysis.
 
 #### Duplicates
 A duplicate is defined by: 
@@ -62,8 +64,12 @@ I've used SQL to detect duplicates. The SQL script is provided in the repo.
 
 ## Exploratory analysis
 
+* Overall stats for tickets, brands, countries, shops
+* tickets: Over the years, status
+* Shop: Performance on repairability, country, most repaired item
+* Country: Performance on repairability, most repaired item
 
 
 ### Sampling
-
+For brand analysis
 
