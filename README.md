@@ -2,15 +2,13 @@
 
 Tech items reparation analysis. Based on Jean Milpied "Reparator.ai" project: https://github.com/JeanMILPIED/reparatorAI
 
+This dataset provide a list of reparation tickets for tech items, such as: Hair Dryers, Smartphones, Coffee maker, Laptop ...
 
 ## Tools used
 Excel, PowerBI, DBeaver
 
 
 ## Data Profiling
-
-This dataset provide a list of reparation tickets for tech items, such as: Hair Dryers, Smartphones, Coffee maker, Laptop ...
-
 
 Before cleaning:
 
@@ -63,13 +61,13 @@ Since I don't have the context, I left them in the dataset and create a special 
 I've used SQL to detect duplicates. The SQL script is provided in the repo.
 
 ## Exploratory analysis
-
+*Dashboard made with PowerBi*
 * Overall stats for tickets, brands, countries, shops
 * tickets: Over the years, status
 * Shop: Performance on repairability, country, most repaired item
 * Country: Performance on repairability, most repaired item
 
 
-### Sampling
+## Sampling
 For brand analysis
 
