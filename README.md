@@ -40,7 +40,9 @@ Data Types:
   * Converted as a integer
   * Outliers: Printer created in 1015 by HP ? 🤨 Before 1950 I've only kept watches, lamp, sewing machine. For the other rows (77) I've deleted year and age
 * **Product age** = Converted as integer
-* **repair_barrier_if_end_of_life** = Status standardisation
+* **repair_barrier_if_end_of_life** = 
+  * Status standardisation
+  * 63 Rows have a comment and a repair Status as "Fixed" or "Repairable". I'll keep those rows because I don't have the info to determine which field is correct.
 * **group Identifier** = 
   * 612 Null values all From "Fixit clinic" data provider. After some research it appears Fixit clinic is a Pop-up Activity, It's not a genuine shop: https://fixitclinic.blogspot.com/ 
   * The Id's are either a number or a text. Texts are countries mostly, so I assume this ID is a shop location
@@ -63,9 +65,15 @@ I've used SQL to detect duplicates. The SQL script is provided in the repo.
 ## Exploratory analysis
 *Dashboard made with PowerBi*
 * Overall stats for tickets, brands, countries, shops
-* tickets: Over the years, status
-* Shop: Performance on repairability, country, most repaired item
-* Country: Performance on repairability, most repaired item
+* Shop: Performance on repairability, most repaired item
+* Countries: Performance on repairability, most repaired item
+* Products: Repairablity over the years
+* Brands
+
+## Correlations
+*Various tests made with Excel*
+* Age and repairability
+* Category and repairability
 
 
 ## Sampling
