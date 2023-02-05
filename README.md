@@ -17,13 +17,13 @@ Before cleaning:
 
 After cleaning:
 
-> 19 Columns;
+> 20 Columns;
 > 62087 records
 
 Data Types:
 
 > * INT: year_of_manufacture; product_age
-> * String: [Row_ID; Duplicate; id; data_provider;	country; partner_product_category; Partner_Category; product_category; product_category_id;	brand; repair_status;	repair_barrier_if_end_of_life; group_identifier;	problem; product_category_new; brand_ok]
+> * String: [Row_ID; Duplicate; id; data_provider;	country; partner_product_category; Partner_Category; product_category; product_category_id;	brand; brand check; repair_status;	repair_barrier_if_end_of_life; group_identifier;	problem; product_category_new; brand_ok]
 > * Date: Event_Date
 
 
@@ -35,7 +35,8 @@ Data Types:
 #### Fields cleaning
 * Renamed the unamed fied as "Row_ID"
 * **Partner product category** = splitted the 2 parts -> New Column "Partner_Category". Lots of missing values / errors in the new column
-* **Brands** = Missing values replaced by "Unknown" and manual standardisation of known brands (search & replace). I will only use legit famous brands names, because there are too much error remaining in this field. A proper cleaning involve a 
+* **Brands** = Missing values replaced by "Unknown" and manual standardisation of known brands (search & replace). I will only use legit famous brands names, because there are too much error remaining in this field.
+* **Brand Check** = Tag to identifiate brands I know. (17 233 rows)
 * **Year of manufacture** =
   * Converted as a integer
   * Outliers: Printer created in 1015 by HP ? 🤨 Before 1950 I've only kept watches, lamp, sewing machine. For the other rows (77) I've deleted year and age
