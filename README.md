@@ -5,7 +5,7 @@ Tech items reparation analysis. Based on Jean Milpied "Reparator.ai" project: ht
 This dataset provide a list of reparation tickets for tech items, such as: Hair Dryers, Smartphones, Coffee maker, Laptop ...
 
 ## Tools used
-Excel, PowerBI, DBeaver
+Excel, PowerBI, DBeaver, PowerPoint
 
 
 ## Data Profiling
@@ -62,16 +62,29 @@ Since I don't have the context, I left them in the dataset and create a special 
 
 I've used SQL to detect duplicates. The SQL script is provided in the repo.
 
-## Exploratory analysis
+## Descriptive Statistics
+*made with Excel*
+* Yearly tickets
+* Years of manufacture (20 Years groups)
+
+## Exploratory Analysis
 *Dashboard made with PowerBi*
 * Overall stats for tickets, brands, countries, shops
 * Shop: Performance on repairability, most repaired item
 * Countries: Performance on repairability, most repaired item
 * Products: Repairablity over the years
-* Brands
+* Brands: TO DO
 
-## Correlations
-*Various tests made with Excel*
+## Functionnal Analysis
+*Full report made with powerpoint*
+
+ * How the items repairability evolve based on the manufacture year (= planned obsolescence) ?
+ * People habits based on their tech items
+ * ...
+
+### Repairability
+Some items can't be fixed. A comment is provided for the cause. 
+#### Correlations
 * Age and repairability
 * Category and repairability
 
