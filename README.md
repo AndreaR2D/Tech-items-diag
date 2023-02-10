@@ -74,7 +74,7 @@ I've used SQL to detect duplicates. The SQL script is provided in the repo.
 * Shop: Performance on repairability, most repaired item
 * Countries: Performance on repairability, most repaired item
 * Products: Repairablity over the years
-* Brands: TO DO
+* Brands: Tickets amount, Repairability percentage. Based on 183 verified brands
 
 ## Functionnal Analysis
 *Full report made with powerpoint*
